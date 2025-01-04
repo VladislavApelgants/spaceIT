@@ -2,13 +2,7 @@ module.exports = [
   "strapi::logger",
   "strapi::errors",
   "strapi::security",
-  {
-    name: "strapi::cors",
-    config: {
-      enabled: true,
-      origin: ["https://spaceit-production.up.railway.app"], // Укажи домены, с которых разрешены запросы
-    },
-  },
+  "strapi::cors",
   "strapi::poweredBy",
   "strapi::query",
   "strapi::body",
