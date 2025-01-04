@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Title from "@/components/common/Title/Title";
+import Image from "next/image";
 import s from "./hero_technologies.module.scss";
 export default function HeroTechnologies() {
   return (
@@ -16,6 +16,7 @@ export default function HeroTechnologies() {
             width={28}
             height={28}
             className={s.techno_icon}
+            alt="html technology icon"
           />
           <h4 className={s.techno_item_title}>HTML</h4>
         </li>
@@ -25,6 +26,7 @@ export default function HeroTechnologies() {
             width={28}
             height={28}
             className={s.techno_icon}
+            alt="js technology icon"
           />
           <h4 className={s.techno_item_title}>JavaScript</h4>
         </li>
@@ -34,6 +36,7 @@ export default function HeroTechnologies() {
             width={28}
             height={28}
             className={s.techno_icon}
+            alt="css technology icon"
           />
           <h4 className={s.techno_item_title}>CSS</h4>
         </li>
@@ -43,6 +46,7 @@ export default function HeroTechnologies() {
             width={28}
             height={28}
             className={s.techno_icon}
+            alt="figma technology icon"
           />
           <h4 className={s.techno_item_title}>Figma</h4>
         </li>
@@ -52,6 +56,7 @@ export default function HeroTechnologies() {
             width={28}
             height={28}
             className={s.techno_icon}
+            alt="react technology icon"
           />
           <h4 className={s.techno_item_title}>React</h4>
         </li>
@@ -61,6 +66,7 @@ export default function HeroTechnologies() {
             width={28}
             height={28}
             className={s.techno_icon}
+            alt="ts technology icon"
           />
           <h4 className={s.techno_item_title}>TypeScript</h4>
         </li>

@@ -1,21 +1,21 @@
-import Hero from "@/components/pages/pm/Hero/Hero";
-import AboutCourse from "@/components/pages/pm/AbooutCourse/AbooutCourse";
-import YouLearning from "@/components/pages/pm/YouLearning/YouLearning";
-import Courses from "@/components/common/PageCoursesList/Courses.module";
 import Contact from "@/components/common/Contact/Contact";
+import Faq from "@/components/common/Faq/Faq";
+import HiddenWrapper from "@/components/common/HiddenWrapper/HiddenWrapper";
+import HowLearn from "@/components/common/HowLearn/HowLearn";
+import NasaCourses from "@/components/common/NasaCourses/NasaCourses";
+import Courses from "@/components/common/PageCoursesList/Courses.module";
+import RegisterCourse from "@/components/common/RegisterCourse/RegisterCourse";
+import { labels, targets } from "@/components/common/Sidebar/constants";
+import Sidebar from "@/components/common/Sidebar/Sidebar";
+import AboutCourse from "@/components/pages/pm/AbooutCourse/AbooutCourse";
 import AboutProfession from "@/components/pages/pm/AboutProfession/AboutProfession";
-import Teachers from "@/components/pages/pm/Teachers/Teachers";
+import CourseTechnology from "@/components/pages/pm/CourseTechnology/CourseTechnology";
+import Diploma from "@/components/pages/pm/Diploma/Diploma";
+import Hero from "@/components/pages/pm/Hero/Hero";
 import Program from "@/components/pages/pm/Program/Program";
 import Ready from "@/components/pages/pm/Ready/Ready";
-import HowLearn from "@/components/common/HowLearn/HowLearn";
-import Diploma from "@/components/pages/pm/Diploma/Diploma";
-import RegisterCourse from "@/components/common/RegisterCourse/RegisterCourse";
-import CourseTechnology from "@/components/pages/pm/CourseTechnology/CourseTechnology";
-import Sidebar from "@/components/common/Sidebar/Sidebar";
-import Faq from "@/components/common/Faq/Faq";
-import NasaCourses from "@/components/common/NasaCourses/NasaCourses";
-import HiddenWrapper from "@/components/common/HiddenWrapper/HiddenWrapper";
-import { targets, labels } from "@/components/common/Sidebar/constants";
+import Teachers from "@/components/pages/pm/Teachers/Teachers";
+import YouLearning from "@/components/pages/pm/YouLearning/YouLearning";
 import s from "./style.module.scss";
 
 export const metadata = {
@@ -32,7 +32,7 @@ export default function Course() {
       <HiddenWrapper>
         <Hero />
         <Sidebar className={"min"} targets={targets} labels={labels} />
-        <AboutCourse name="project manager" />
+        <AboutCourse name="pm" />
         <YouLearning />
         <AboutProfession />
         <Teachers />
@@ -42,7 +42,7 @@ export default function Course() {
         <CourseTechnology />
         <NasaCourses />
         <Diploma />
-        <RegisterCourse name="project manager" />
+        <RegisterCourse name="pm" />
         <Faq />
         <Courses />
         <Contact />

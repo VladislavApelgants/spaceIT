@@ -1,7 +1,7 @@
 "use client";
-import s from "./styles.module.scss";
 import { serverAPI } from "@/services/serverAPI";
 import { useEffect, useState } from "react";
+import s from "./styles.module.scss";
 
 export default function CourseInfo({ name = "" }) {
   const [date, setDate] = useState("");
